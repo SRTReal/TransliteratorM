@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEOGRAPHICAL TERMS</title>
+    <link rel="stylesheet" href="geo.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>INDEX</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="kb__navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="/" class="navbar__link">TIMELINES</a>
+              <ul>
+                <li>
+                  <a href="hellas.html">The Hellenic World</a>
+                </li>
+                <li>
+                  <a href="/">ACHAEMENID PERSIA</a>
+                </li>
+                <li>
+                  <a href="geo.html">GEOGRAPHICAL TERMS</a>
+                </li>
+              </ul>
+          </li>
+          <li class="navbar__btn">
+            <a href="loginForm.html" class="button">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+  <div id="formContainer">
+    <form id="entryForm">
+        <div id="inputFields">
+            <label for="term">Term:</label>
+            <input type="text" id="term" name="term" placeholder="Enter Term" required>
+
+            <label for="grammar">Origin:</label>
+            <input type="text" id="grammar" name="grammar" placeholder="Enter Word Origin">
+
+            <label for="definition">LOCATION:</label>
+            <input type="text" id="definition" name="definition" placeholder="Enter Location">
+
+            <label for="additionalInfo">ADDITIONAL INFORMATION:</label>
+            <input type="text" id="additionalInfo" name="additionalInfo" placeholder="Enter Additional Information">
+        </div>
+        <button type="submit">Add to index</button>
+    </form>
+</div>
+
+<ul id="lexicon">
+    <li class="header-row">
+        <div class="header-item">X</div>
+        <div class="header-item">Word</div>
+        <div class="header-item">ORIGIN</div>
+        <div class="header-item">LOCATION</div>
+        <div class="header-item">ADDITIONAL Info</div>
+    </li>
+</ul>
+    <script src="geo.js"></script>
+</body>
+</html>

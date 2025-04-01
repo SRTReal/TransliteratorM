@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eἰμί</title>
+  <link rel="stylesheet" href="be.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>TESTING</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="kb__navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="lexicon.html" class="navbar__link">Lexicon</a>
+          </li>
+          <li class="navbar__item">
+            <a href="g__verbs.html" class="navbar__link">VERBS</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="loginForm.html" class="button">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+  <div class="container">
+    <table>
+      <caption>TO BE (PRESENT)</caption>
+      <thead>
+        <tr>
+          <th colspan="2">Number</th>
+          <th colspan="3">Singular</th>
+          <th colspan="2">Dual</th>
+          <th colspan="3">Plural</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2"></td>
+          <td>First</td>
+          <td>Second</td>
+          <td>Third</td>
+          <td>Second</td>
+          <td>Third</td>
+          <td>First</td>
+          <td>Second</td>
+          <td>Third</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Active</td>
+          <td>Indicative</td>
+          <td><textarea data-correct-answer="εἰμί" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἶ" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἐστί" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἐστόν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἐστόν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἐσμέν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἐστέ" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἰσί" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+        </tr>
+        <tr>
+          <td>Subjunctive</td>
+          <td><textarea data-correct-answer="ὦ" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ᾖς" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ᾖ" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦτον" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦτον" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ὦμεν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦτε" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ὦσι" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+        </tr>
+        <tr>
+          <td>Optative</td>
+          <td><textarea data-correct-answer="εἴην" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἴης" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἴη" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἴητον" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἰήτην" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἴημεν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἴητε" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="εἴησαν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+        </tr>
+        <tr>
+          <td>Imperative</td>
+          <td><textarea data-correct-answer="" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἴσθι" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἔστω" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἔστον" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἔστων" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἔστε" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἔστων,ἔστωσαν,ὄντων" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+        </tr>
+        <tr>
+          <td colspan="2" class="aV"></td>
+          <td colspan="10" class="aV">Active</td>
+        </tr>
+        <tr>
+          <td colspan="2">Infinitive</td>
+          <td colspan="8"><textarea data-correct-answer="εἶναι" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+        </tr>
+        <tr>
+          <td rowspan="3">Participle</td>
+          <td>Masculine</td>
+          <td colspan="8"><textarea data-correct-answer="ὤν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>               
+        </tr>
+        <tr>
+          <td>Feminine</td>
+          <td colspan="8"><textarea data-correct-answer="οὖσα" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>               
+        </tr>
+        <tr>
+          <td>Neuter</td>
+          <td colspan="8"><textarea data-correct-answer="ὄν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>               
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="checkAnswers()">Check Answers</button>
+    <p class="feedback" id="feedback">Correct!</p>
+    <p class="feedback error" id="errorFeedback">Incorrect. Please try again.</p>
+    <button onclick="clearFn()">Reset</button>
+  </div>
+  <div class="container">
+    <table>
+      <caption>TO BE (IMPERFECT)</caption>
+      <thead>
+        <tr>
+          <th colspan="2">Number</th>
+          <th colspan="3">Singular</th>
+          <th colspan="2">Dual</th>
+          <th colspan="3">Plural</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td colspan="2"></td>
+          <td>First</td>
+          <td>Second</td>
+          <td>Third</td>
+          <td>Second</td>
+          <td>Third</td>
+          <td>First</td>
+          <td>Second</td>
+          <td>Third</td>
+        </tr>
+        <tr>
+          <td rowspan="4">Active</td>
+          <td>Indicative</td>
+          <td><textarea data-correct-answer="ἦα,ἦ" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦσθα" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἤστον" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἤστην" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦμεν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦτε" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+          <td><textarea data-correct-answer="ἦσαν" rows="2" class="textArea" onkeyup="transcribe()"></textarea></td>
+        </tr>
+      </tbody>
+    </table>
+    <button onclick="checkAnswers()">Check Answers</button>
+    <p class="feedback" id="feedback">Correct!</p>
+    <p class="feedback error" id="errorFeedback">Incorrect. Please try again.</p>
+    <button onclick="clearFn()">Reset</button>
+  </div>
+  <script src="be.js"></script>
+</body>
+</html>

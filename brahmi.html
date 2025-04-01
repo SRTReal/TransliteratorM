@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brahmi Keyboard</title>
+  <link rel="stylesheet" href="brahmi.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar__container">
+      <a href="/" id="navbar__logo"><i class="fas fa-gem"></i>𑀩𑁆𑀭𑀸𑀳𑁆𑀫𑀻</a>
+      <div class="navbar__toggle" id="mobile-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <nav class="kb__navbar">
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a href="index.html" class="navbar__link">HOME</a>
+          </li>
+          <li class="navbar__item">
+            <a href="lexicon-brahmi.html" class="navbar__link">Lexicon</a>
+          </li>
+          <li class="navbar__btn">
+            <a href="loginForm.html" class="button">Sign Up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </nav>
+  <div class="center">
+    <div class="container">
+      <textarea 
+      spellcheck="false" name="bigBox" id="textArea" rows="4" onkeyup="transcribeFn()" class="boxBig">
+      </textarea>
+    </div>
+    <div class="cls1__container">
+      <input class="btn__cls1" type="button" value="Copy" onclick="copyFn()">
+      <input class="btn__cls1" type="button" value="Save" onclick="saveFn()">
+      <input class="btn__cls1" type="button" value="Clear" onclick="clearFn()">
+      <input class="btn__cls1" type="button" value="Add to Lexicon" onclick="lexFn()">
+    </div> 
+  </div>
+  <script src="brahmi.js"></script>
+</body>
+</html>
